@@ -2,8 +2,15 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Saludo from './components/Saludo';
 import TarjetaUsuario from './components/TarjetaUsuario';
-
+import Producto from './components/Producto';
 export default function App() {
+
+    const productos =[
+    { id: 1, nombre: "Producto 1", precio: "$10" },
+    { id: 2, nombre: "Producto 2", precio: "$20" },
+    { id: 3, nombre: "Producto 3", precio: "$30" },
+    ]
+
   return (
     <View style={styles.container}>
       <Saludo nombre="Juan" />
@@ -11,8 +18,16 @@ export default function App() {
       <Saludo nombre="Danieska" />
       <Saludo nombre="Marylin" />
       <Saludo nombre = "Nahomy" />
-
       <TarjetaUsuario nombre="Yadnia Baltodano" edad="20" email="yadnia.baltodano@example.com" />
+
+    {productos.map((producto) => (
+    <Producto
+      key={producto.id}
+      nombre={producto.nombre}
+      precio={producto.precio}
+    />
+  ))}
+
     </View>
   );
 }
