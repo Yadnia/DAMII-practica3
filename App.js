@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Saludo from './components/Saludo';
+import TarjetaUsuario from './components/TarjetaUsuario';
 
 export default function App() {
   return (
@@ -10,6 +11,8 @@ export default function App() {
       <Saludo nombre="Danieska" />
       <Saludo nombre="Marylin" />
       <Saludo nombre = "Nahomy" />
+
+      <TarjetaUsuario nombre="Yadnia Baltodano" edad="20" email="yadnia.baltodano@example.com" />
     </View>
   );
 }
@@ -20,5 +23,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    padding : 20,
+  
   },
 });
