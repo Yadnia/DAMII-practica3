@@ -3,6 +3,8 @@ import { StyleSheet, Text, View } from 'react-native';
 import Saludo from './components/Saludo';
 import TarjetaUsuario from './components/TarjetaUsuario';
 import Producto from './components/Producto';
+import Boton from './components/Boton';
+
 export default function App() {
 
     const productos =[
@@ -28,6 +30,8 @@ export default function App() {
     />
   ))}
 
+      <Boton texto="Hola, tocame" color="#007bff" />
+      <Boton texto="Adios, tocame" color="#dc3545" />
     </View>
   );
 }
