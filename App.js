@@ -4,6 +4,7 @@ import Saludo from './components/Saludo';
 import TarjetaUsuario from './components/TarjetaUsuario';
 import Producto from './components/Producto';
 import Boton from './components/Boton';
+import Perfil from './components/Perfil';
 
 export default function App() {
 
@@ -32,6 +33,7 @@ export default function App() {
 
       <Boton texto="Hola, tocame" color="#007bff" />
       <Boton texto="Adios, tocame" color="#dc3545" />
+    <Perfil nombre="María Benavidez" profesion="Desarrolladora de Software" foto="https://www.shutterstock.com/image-photo/profile-portrait-successful-cheerful-company-260nw-2319601793.jpg" />
     </View>
   );
 }
